@@ -9,6 +9,7 @@ import Free from "./singlePictos/Free.js"
 import Books from "./singlePictos/Books.js"
 import Gooey from "./singlePictos/Gooey.js"
 import Planets from "./singlePictos/Planets.js"
+import Portfolio from "./Portfolio"
 class Pictograms extends Component {
 
   state = {
@@ -23,19 +24,14 @@ class Pictograms extends Component {
     books: '',
     gooey: '',
     planets: '',
+    openPortfolio:'',
 
   }
 
   change(picto) {
-    console.log(picto)
-    console.log(this.state, 'unchanged')
-
-    this.state[picto] === '' ?
-      this.setState({ [picto]: 'changed' }) :
+      this.state[picto] === '' ?
+      this.setState({ [picto]: 'changed', openPortfolio: picto }) :
       this.setState({ [picto]: '' })
-
-    console.log(this.state, 'CHANGEDhduhfjvnfejv')
-
   };
 
 
@@ -43,6 +39,7 @@ class Pictograms extends Component {
   render() {
 
     return (
+<div>
 
       < section className='all-pictos' >
 
@@ -90,8 +87,9 @@ class Pictograms extends Component {
 
 
 
-
       </section>
+<Portfolio openWork = {this.state.openPortfolio}/>
+      </div>
     );
   }
 }

@@ -8,7 +8,7 @@
 
 .all-pictos {
   top: 20px;
-  
+  display:block;
   width: 500px;
   position: relative;
   margin: 0 auto;
