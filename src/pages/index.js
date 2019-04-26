@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import "./stylish/gooey.css";
-import "./stylish/pictos.css"
-import "./stylish/boxes.css"
-import "./stylish/portfolio.css"
+import "../stylish/gooey.css";
+import "../stylish/pictos.css"
+import "../stylish/boxes.css"
+import "../stylish/portfolio.css"
+
+
 
 import Pictograms from "./pictograms";
 class index extends Component {
